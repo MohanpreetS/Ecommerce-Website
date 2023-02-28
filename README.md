@@ -1,3 +1,2 @@
-# Electric Car Control App UI
-
-A minimalistic and unorthodox app design to control certain aspects of an electric car. 
+# Full Stack E-Commerce App
+This project is a fully functional Ecommerce app with an Admin Dashboard and CMS. It uses NextJS, Payload CMS, Stripe and much more. 
