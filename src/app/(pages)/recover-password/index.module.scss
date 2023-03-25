@@ -18,3 +18,18 @@
     color: var(--color-gray-500);
   }
 }
+
+.heroImg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/assets/images/image-3.svg');
+
+  @include mid-break {
+    background: none;
+    display: flex;
+    justify-content: center;
+  }
+}
