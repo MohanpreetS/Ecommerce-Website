@@ -1,1 +1,12 @@
 @import '../../_css/queries.scss';
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @include small-break {
+    margin: 0;
+  }
+}
