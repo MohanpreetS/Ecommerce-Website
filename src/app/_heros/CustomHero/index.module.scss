@@ -29,3 +29,19 @@
   }
 }
 
+.heroTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15% var(--gutter-h);
+  width: 100%;
+
+  @include mid-break {
+    padding: 10% 30px;
+  }
+
+  @include small-break {
+    padding: 50px 30px;
+  }
+
+}
