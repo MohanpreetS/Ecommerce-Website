@@ -61,4 +61,15 @@
     }
   }
 
+  p {
+    font-size: 30px;
+
+    @include mid-break {
+      font-size: 24px;
+    }
+
+    @include small-break {
+      font-size: 18px;
+    }
+  }
 }
