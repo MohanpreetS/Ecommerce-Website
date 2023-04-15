@@ -1,2 +1,8 @@
 @use '../../_css/queries.scss' as *;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
