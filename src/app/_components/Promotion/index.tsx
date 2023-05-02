@@ -24,7 +24,12 @@ const Promotion = () => {
       const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))
       const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)
 
-     
+      setTime({ days, hours, minutes, seconds })
+
+      if (timeDifference === 0) {
+        clearInterval(timerInterval)
+        // You can add code here to handle what happens when the target date is reached.
+      }
     }, 1000)
 
     return () => {
