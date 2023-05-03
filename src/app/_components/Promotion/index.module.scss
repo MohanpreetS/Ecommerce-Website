@@ -10,3 +10,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+.title {
+  font-weight: 400;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
