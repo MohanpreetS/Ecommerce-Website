@@ -29,3 +29,10 @@
   background-repeat: no-repeat;
 }
 
+.dealBtn {
+  width: fit-content;
+
+  @include mid-break {
+    width: 100%;
+  }
+}
