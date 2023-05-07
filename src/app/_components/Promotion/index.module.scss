@@ -36,3 +36,13 @@
     width: 100%;
   }
 }
+
+.stats {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 100px);
+
+  @include large-break {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
