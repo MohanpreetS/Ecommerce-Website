@@ -8,3 +8,19 @@ interface CheckboxProps {
   isSelected: boolean
   onClickHandler: (value: string) => void
 }
+
+export const Checkbox: React.FC<CheckboxProps> = ({ label, value, isSelected, onClickHandler }) => {
+  const [isChecked, setIsChecked] = useState(isSelected)
+
+
+  return (
+    <label className={classes.checkboxWrapper}>
+      <input
+        type="checkbox"
+        checked={isChecked}
+        className={classes.checkbox}
+      />
+      {label}
+    </label>
+  )
+}
