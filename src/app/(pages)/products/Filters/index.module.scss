@@ -52,7 +52,12 @@
   flex-direction: column;
   gap: 16px;
 
-  
+  p {
+    white-space: nowrap;
+  }
 }
 
+.hr {
+  margin: 20px 0;
+}
 
