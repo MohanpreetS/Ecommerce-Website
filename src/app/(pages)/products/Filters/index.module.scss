@@ -35,3 +35,16 @@
     flex-direction: column;
   }
 }
+
+.title {
+  white-space: nowrap;
+}
+
+.priceSlider {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+
