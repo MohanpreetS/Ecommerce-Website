@@ -15,7 +15,33 @@ import { generateMeta } from '../../../_utilities/generateMeta'
 // See the note in '../../../[slug]/page.tsx' about this
 export const dynamic = 'force-dynamic'
 
+export default async function Product({ params: { slug } }) {
+  const { isEnabled: isDraftMode } = draftMode()
 
+  let product: Product | null = null
+
+  try {
+    product = await fetchDoc<Product>({
+      collection: 'products',
+      slug,
+      draft: isDraftMode,
+    })
+  } catch (error) {
+    console.error(error) // eslint-disable-line no-console
+  }
+
+  if (!product) {
+    notFound()
+  }
+
+  const { relatedProducts } = product
+
+  return (
+    <>
+      
+    </>
+  )
+}
 
 export async function generateStaticParams() {
   try {
