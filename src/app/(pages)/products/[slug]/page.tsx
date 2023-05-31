@@ -38,7 +38,9 @@ export default async function Product({ params: { slug } }) {
 
   return (
     <>
-      
+      <ProductHero product={product} />
+      {product?.enablePaywall && <PaywallBlocks productSlug={slug as string} disableTopPadding />}
+     
     </>
   )
 }
