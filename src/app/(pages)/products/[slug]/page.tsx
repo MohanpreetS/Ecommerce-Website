@@ -16,6 +16,16 @@ import { generateMeta } from '../../../_utilities/generateMeta'
 export const dynamic = 'force-dynamic'
 
 
+
+export async function generateStaticParams() {
+  try {
+    const products = await fetchDocs<ProductType>('products')
+    return products?.map(({ slug }) => slug)
+  } catch (error) {
+    return []
+  }
+}
+
 export async function generateMetadata({ params: { slug } }): Promise<Metadata> {
   const { isEnabled: isDraftMode } = draftMode()
 
