@@ -52,6 +52,12 @@ export const Price: React.FC<{
     withQuantity: priceFromJSON(priceJSON, quantity),
   }))
 
+  useEffect(() => {
+    setPrice({
+      actualPrice: priceFromJSON(priceJSON),
+      withQuantity: priceFromJSON(priceJSON, quantity),
+    })
+  }, [priceJSON, quantity])
 
   return (
     <div className={classes.actions}>
