@@ -43,6 +43,12 @@ const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
         )}
       </Link>
 
+      <div className={classes.itemDetails}>
+        <div className={classes.titleWrapper}>
+          <h6>{title}</h6>
+          <Price product={product} button={false} />
+        </div>
+      </div>
 
       <div className={classes.subtotalWrapper}>
         <Price product={product} button={false} quantity={quantity} />
