@@ -78,3 +78,15 @@
   font-weight: 700;
 }
 
+.subtotalWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 60px;
+
+  @include small-break {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
