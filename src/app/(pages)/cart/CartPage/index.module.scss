@@ -13,3 +13,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+.header {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 8px;
+
+  @include small-break {
+    display: none;
+  }
+}
+
