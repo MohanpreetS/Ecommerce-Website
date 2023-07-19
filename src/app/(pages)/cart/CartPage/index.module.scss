@@ -1,2 +1,15 @@
 @import '../../../_css/common';
 
+.cart {
+  margin: 30px 0;
+}
+
+.cartWrapper {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  gap: 60px;
+
+  @include large-break {
+    grid-template-columns: 1fr;
+  }
+}
