@@ -23,7 +23,9 @@ export const CheckoutItem = ({ product, title, metaImage, quantity, index }) => 
         <p className={classes.quantity}>x{quantity}</p>
       </div>
 
-      
+      <div className={classes.subtotal}>
+        <Price product={product} button={false} quantity={quantity} />
+      </div>
     </li>
   )
 }
