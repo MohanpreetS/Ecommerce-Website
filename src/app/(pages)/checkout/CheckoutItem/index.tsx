@@ -15,7 +15,15 @@ export const CheckoutItem = ({ product, title, metaImage, quantity, index }) => 
         )}
       </Link>
 
-    
+      <div className={classes.itemDetails}>
+        <div className={classes.titleWrapper}>
+          <h6>{title}</h6>
+          <Price product={product} button={false} />
+        </div>
+        <p className={classes.quantity}>x{quantity}</p>
+      </div>
+
+      
     </li>
   )
 }
